@@ -2,135 +2,135 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 :root {
-    --lexend-ceda: 'Lexend Deca', sans-serif;
-    --big-shoulders: 'Big Shoulders', sans-serif;
-    --lightGray: hsl(0, 0%, 95%);
-    --transparent-white: hsla(0, 0%, 100%, 0.75);
-    --bright-orange: hsl(31, 77%, 52%);
-    --dark-cyan: hsl(184, 100%, 22%);
-    --very-dark-cyan: hsl(179, 100%, 13%);
-}
- 
-* {
-    padding: 0;
-    margin: 0;
+  --lexend-ceda: "Lexend Deca", sans-serif;
+  --big-shoulders: "Big Shoulders", sans-serif;
+  --lightGray: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
-    overflow-y: scroll;
-    box-sizing: border-box;
-    background-color: var(--lightGray);
-    font-size: 15px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  background-color: var(--lightGray);
+  font-size: 15px;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 57.4rem;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 10.8rem;
-    margin-bottom: 10.8rem;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 57.4rem;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10.8rem;
+  margin-bottom: 10.8rem;
+  align-items: center;
 }
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
-.container-one, .container-two, .container-three {
-    padding: 3rem;
+.container-one,
+.container-two,
+.container-three {
+  padding: 3rem;
 }
 
 .icon {
-    width: 30%;
-    height: 80%;
+  width: 30%;
+  height: 80%;
 }
 
 .headings {
-    color: var(--lightGray);
-    font-family: var(--big-shoulders);
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: .5px;
-    font-weight: 200;
+  color: var(--lightGray);
+  font-family: var(--big-shoulders);
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 200;
 }
 
 .descriptions {
-    color: var(--transparent-white);
-    font-family: var(--lexend-ceda);
-    font-weight: 100;
-    line-height: 25px;
+  color: var(--transparent-white);
+  font-family: var(--lexend-ceda);
+  font-weight: 100;
+  line-height: 25px;
 }
 
 .buttons {
-    background-color: var(--lightGray);
-    border-color: transparent;
-    border-radius: 35px;
-    font-family: var(--lexend-ceda);
-    width: 55%;
-    margin-top: 3.4rem;
-    padding: 0.9rem;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
+  background-color: var(--lightGray);
+  border-color: transparent;
+  border-radius: 35px;
+  font-family: var(--lexend-ceda);
+  width: 55%;
+  margin-top: 3.4rem;
+  padding: 0.9rem;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 .buttons:hover {
-    border: 1px solid var(--light-gray);
-    cursor: pointer;
-    color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  color: var(--light-gray);
 }
 
 /* container one  */
 .container-one {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: var(--bright-orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: var(--bright-orange);
 }
 
 .container-one a {
-    color: var(--bright-orange);
+  color: var(--bright-orange);
 }
 
 /* container two  */
 .container-two {
-    background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan);
 }
 
 .container-two a {
-    color: var(--dark-cyan);
+  color: var(--dark-cyan);
 }
 
 /* container three  */
 .container-three {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--very-dark-cyan);
 }
 
 .container-three a {
-    color: var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
 }
 
 @media screen and (max-width: 1000px) {
-    .main-container {
-        flex-wrap: wrap;
-    }
+  .main-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        overflow: scroll;
-    }
+  body {
+    overflow: scroll;
+  }
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
